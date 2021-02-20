@@ -1,11 +1,12 @@
 ##
-numero = 100
+numero = 10000
 def largo_de_un_numero(n):
-   # numero= int(input("Dame un numero"))
-   contador = 1
-   while(n /10 > 0):
-        n = n/10
-        contador = contador + 1
-        return(contador)
+   contador = 0
+   while( n/10 > 0):
+       contador += 1
+       n = n/10
+       return contador
+
+
 
 print(largo_de_un_numero(numero))
