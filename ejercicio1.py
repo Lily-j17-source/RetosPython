@@ -1,19 +1,15 @@
 ##
-numero = 10000
-def largo_de_un_numero(n):
-    i = n
-    contador = 1
-    while (i/10 > 0):
-        contador += 1
-        rest = n/10
-        i = rest
-    return contador
-  # contador = 0
-   #while( n/10 > 0):
-    #   contador += 1
-     #  n = n/10
-      # return contador
+numero = 89635
 
+def largo_de_un_numero(n):
+    if(isinstance(n,int)):
+        contador = 0
+        numero_cadena = str(n)
+        while numero_cadena[contador:]:
+          contador += 1
+        return contador
+    else:
+        return"no el el tipo de dato correcto"
 
 
 print(largo_de_un_numero(numero))
